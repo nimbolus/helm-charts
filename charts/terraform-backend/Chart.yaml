@@ -1,6 +1,6 @@
 apiVersion: v2
-name: system-upgrade-controller
-description: Kubernetes-native upgrade controller (for nodes)
+name: terraform-backend
+description: A Terraform state backend server
 
 # A chart can be either an 'application' or a 'library' chart.
 #
@@ -21,14 +21,20 @@ version: 0.1.0
 # incremented each time you make changes to the application. Versions are not expected to
 # follow Semantic Versioning. They should reflect the version the application is using.
 # It is recommended to use it with quotes.
-appVersion: "v0.8.1"
+appVersion: "0.1.0"
 
-home: https://github.com/rancher/system-upgrade-controller
+home: https://github.com/nimbolus/terraform-backend
+
+dependencies:
+  - name: redis
+    version: 16.x.x
+    repository: https://charts.bitnami.com/bitnami
+    condition: redis.enabled
 
 maintainers:
   - name: lu1as
     email: lukas.steiner@steinheilig.de
 
 sources:
-  - https://github.com/nimbolus/helm-charts/tree/main/charts/system-upgrade-controller
-  - https://github.com/rancher/system-upgrade-controller
+  - https://github.com/nimbolus/helm-charts/tree/main/charts/terraform-backend
+  - https://github.com/nimbolus/terraform-backend
