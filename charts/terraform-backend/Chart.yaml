@@ -1,6 +1,6 @@
 apiVersion: v2
 name: terraform-backend
-description: A Terraform state backend server 
+description: A Terraform state backend server
 
 # A chart can be either an 'application' or a 'library' chart.
 #
