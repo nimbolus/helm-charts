@@ -34,3 +34,7 @@ dependencies:
 maintainers:
   - name: lu1as
     email: lukas.steiner@steinheilig.de
+
+sources:
+  - https://github.com/nimbolus/helm-charts/tree/main/charts/terraform-backend
+  - https://github.com/nimbolus/terraform-backend

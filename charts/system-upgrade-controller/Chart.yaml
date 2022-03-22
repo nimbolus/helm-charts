@@ -28,3 +28,7 @@ home: https://github.com/rancher/system-upgrade-controller
 maintainers:
   - name: lu1as
     email: lukas.steiner@steinheilig.de
+
+sources:
+  - https://github.com/nimbolus/helm-charts/tree/main/charts/system-upgrade-controller
+  - https://github.com/rancher/system-upgrade-controller
