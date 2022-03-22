@@ -24,3 +24,7 @@ version: 0.1.0
 appVersion: "v0.8.1"
 
 home: https://github.com/rancher/system-upgrade-controller
+
+maintainers:
+  - name: lu1as
+    email: lukas.steiner@steinheilig.de
