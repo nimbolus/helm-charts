@@ -100,7 +100,8 @@ env:
   # TLS_KEY: /var/run/secrets/tls/tls.key
   # TLS_CERT: /var/run/secrets/tls/tls.crt
 
-envValueFrom: {}
+envValueFrom:
+  {}
   # KMS_KEY:
   #   secretKeyRef:
   #     name: terraform-backend-kms-key
@@ -112,17 +113,20 @@ persistence:
     - ReadWriteOnce
   size: 10G
 
-extraVolumes: []
+extraVolumes:
+  []
   # - name: tls
   #   secret:
   #     secretName: terraform-backend-tls
 
-extraVolumeMounts: []
+extraVolumeMounts:
+  []
   # - name: tls
   #   mountPath: /var/run/secrets/tls
   #   readOnly: true
 
-hostAliases: []
+hostAliases:
+  []
   # - ip: "127.0.0.1"
   #   hostnames:
   #   - "foo.local"
@@ -133,3 +137,30 @@ redis:
   architecture: standalone
   global:
     password: secret
+
+externalRedis:
+  host: localhost
+  port: 6379
+  username: ""
+  password: ""
+  existingSecret: ""
+  existingSecretPasswordKey: ""
+
+postgresql:
+  enabled: false
+  architecture: standalone
+  auth:
+    enablePostgresUser: false
+    username: terraform_backend
+    password: ""
+    database: terraform_backend
+    existingSecret: ""
+
+externalPostgresql:
+  host: localhost
+  port: 5432
+  user: terraform_backend
+  password: ""
+  database: terraform_backend
+  existingSecret: ""
+  existingSecretPasswordKey: ""
