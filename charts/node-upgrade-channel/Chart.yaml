@@ -24,3 +24,11 @@ version: 0.1.0
 appVersion: "0.1.0"
 
 home: https://github.com/nimbolus/k8s-openstack-node-upgrade-agent
+
+maintainers:
+  - name: lu1as
+    email: lukas.steiner@steinheilig.de
+
+sources:
+  - https://github.com/nimbolus/helm-charts/tree/main/charts/node-upgrade-channel
+  - https://github.com/nimbolus/k8s-openstack-node-upgrade-agent

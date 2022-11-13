@@ -83,7 +83,7 @@ affinity: {}
 
 # secret with openstack credentials (clouds.yaml)
 secret:
-  create: false
+  create: true
   name: openstack-clouds
   data:
     clouds:
