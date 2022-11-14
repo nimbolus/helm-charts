@@ -3,6 +3,23 @@ entries:
   node-upgrade-channel:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2022-11-14T19:05:57.207803059Z"
+    description: OpenStack node upgrade channel for system-upgrade-controller
+    digest: ec53c6a0f82ec0791b1511623d91a27b2ee6ea24f991cf41f124d3a5c6962669
+    home: https://github.com/nimbolus/k8s-openstack-node-upgrade-agent
+    maintainers:
+    - email: lukas.steiner@steinheilig.de
+      name: lu1as
+    name: node-upgrade-channel
+    sources:
+    - https://github.com/nimbolus/helm-charts/tree/main/charts/node-upgrade-channel
+    - https://github.com/nimbolus/k8s-openstack-node-upgrade-agent
+    type: application
+    urls:
+    - https://github.com/nimbolus/helm-charts/releases/download/node-upgrade-channel-0.1.1/node-upgrade-channel-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2022-03-21T17:09:27.113786945Z"
     description: OpenStack node upgrade channel for system-upgrade-controller
     digest: 86262e65a571dcf27aef279ac628844f8a6f72b541ce23ba9fea810366324e9d
@@ -13,6 +30,23 @@ entries:
     - https://github.com/nimbolus/helm-charts/releases/download/node-upgrade-channel-0.1.0/node-upgrade-channel-0.1.0.tgz
     version: 0.1.0
   system-upgrade-controller:
+  - apiVersion: v2
+    appVersion: v0.9.1
+    created: "2022-11-14T19:05:57.355246181Z"
+    description: Kubernetes-native upgrade controller (for nodes)
+    digest: 0854691769e3864ffb2c97a5f359536639d2be6ff78ea071ab6b0e767fe3d8b4
+    home: https://github.com/rancher/system-upgrade-controller
+    maintainers:
+    - email: lukas.steiner@steinheilig.de
+      name: lu1as
+    name: system-upgrade-controller
+    sources:
+    - https://github.com/nimbolus/helm-charts/tree/main/charts/system-upgrade-controller
+    - https://github.com/rancher/system-upgrade-controller
+    type: application
+    urls:
+    - https://github.com/nimbolus/helm-charts/releases/download/system-upgrade-controller-0.2.0/system-upgrade-controller-0.2.0.tgz
+    version: 0.2.0
   - apiVersion: v2
     appVersion: v0.8.1
     created: "2022-03-21T17:09:27.29518585Z"
