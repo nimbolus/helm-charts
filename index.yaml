@@ -32,6 +32,23 @@ entries:
   system-upgrade-controller:
   - apiVersion: v2
     appVersion: v0.9.1
+    created: "2023-03-26T20:07:16.865688017Z"
+    description: Kubernetes-native upgrade controller (for nodes)
+    digest: f6c6e1582efaf17a4d707e31c3883ead0813fd8cd6f6d36394e8380eeefcc518
+    home: https://github.com/rancher/system-upgrade-controller
+    maintainers:
+    - email: lukas.steiner@steinheilig.de
+      name: lu1as
+    name: system-upgrade-controller
+    sources:
+    - https://github.com/nimbolus/helm-charts/tree/main/charts/system-upgrade-controller
+    - https://github.com/rancher/system-upgrade-controller
+    type: application
+    urls:
+    - https://github.com/nimbolus/helm-charts/releases/download/system-upgrade-controller-0.2.1/system-upgrade-controller-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v2
+    appVersion: v0.9.1
     created: "2022-11-14T19:05:57.355246181Z"
     description: Kubernetes-native upgrade controller (for nodes)
     digest: 0854691769e3864ffb2c97a5f359536639d2be6ff78ea071ab6b0e767fe3d8b4
