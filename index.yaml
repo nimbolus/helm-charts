@@ -75,4 +75,33 @@ entries:
     urls:
     - https://github.com/nimbolus/helm-charts/releases/download/system-upgrade-controller-0.1.0/system-upgrade-controller-0.1.0.tgz
     version: 0.1.0
-generated: "2022-03-21T17:09:26.846824941Z"
+  terraform-backend:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2023-03-28T20:44:32.598155429Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.x.x
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    description: A Terraform state backend server
+    digest: 8c2305cf3a8ffaf8f03669874b69b1eb47e64b2431080fb1ce76815a10537a6a
+    home: https://github.com/nimbolus/terraform-backend
+    maintainers:
+    - email: lukas.steiner@steinheilig.de
+      name: lu1as
+    - email: tobias.krischer@elyxon.de
+      name: tobikris
+    name: terraform-backend
+    sources:
+    - https://github.com/nimbolus/helm-charts/tree/main/charts/terraform-backend
+    - https://github.com/nimbolus/terraform-backend
+    type: application
+    urls:
+    - https://github.com/nimbolus/helm-charts/releases/download/terraform-backend-0.1.0/terraform-backend-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-03-28T20:44:32.598180229Z"
