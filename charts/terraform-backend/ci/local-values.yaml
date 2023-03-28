@@ -1,0 +1,6 @@
+env:
+  KMS_KEY: eiChfB+SNpT+l6v8/aGsKsc+tfZhqXMUnsOlYoDdxYY=
+  LOCK_BACKEND: local
+
+redis:
+  enabled: false
