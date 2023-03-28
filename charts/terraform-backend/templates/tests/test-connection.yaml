@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "terraform-backend.fullname" . }}-test-connection"
+  labels:
+    {{- include "terraform-backend.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "terraform-backend.fullname" . }}:{{ .Values.service.port }}/health']
+  restartPolicy: Never
