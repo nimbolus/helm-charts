@@ -77,6 +77,34 @@ entries:
     version: 0.1.0
   terraform-backend:
   - apiVersion: v2
+    appVersion: 0.1.1
+    created: "2023-03-29T08:24:20.32243179Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.x.x
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    description: A Terraform state backend server
+    digest: 067cd1657534bc01c533b6837a2f33165bf974c2ff996c33e1148967dc9120b4
+    home: https://github.com/nimbolus/terraform-backend
+    maintainers:
+    - email: lukas.steiner@steinheilig.de
+      name: lu1as
+    - email: tobias.krischer@elyxon.de
+      name: tobikris
+    name: terraform-backend
+    sources:
+    - https://github.com/nimbolus/helm-charts/tree/main/charts/terraform-backend
+    - https://github.com/nimbolus/terraform-backend
+    type: application
+    urls:
+    - https://github.com/nimbolus/helm-charts/releases/download/terraform-backend-0.1.1/terraform-backend-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
     appVersion: 0.1.0
     created: "2023-03-28T20:44:32.598155429Z"
     dependencies:
@@ -104,4 +132,4 @@ entries:
     urls:
     - https://github.com/nimbolus/helm-charts/releases/download/terraform-backend-0.1.0/terraform-backend-0.1.0.tgz
     version: 0.1.0
-generated: "2023-03-28T20:44:32.598180229Z"
+generated: "2023-03-29T08:24:20.32244979Z"
