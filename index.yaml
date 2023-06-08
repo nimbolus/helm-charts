@@ -51,7 +51,7 @@ entries:
     appVersion: v0.9.1
     created: "2023-03-26T20:07:16.865688017Z"
     description: Kubernetes-native upgrade controller (for nodes)
-    digest: f6c6e1582efaf17a4d707e31c3883ead0813fd8cd6f6d36394e8380eeefcc518
+    digest: 00a16948f746c130aa2c95a4a2a7a67c33dfcc17fce81119277e06180fe728b8
     home: https://github.com/rancher/system-upgrade-controller
     maintainers:
     - email: lukas.steiner@steinheilig.de
