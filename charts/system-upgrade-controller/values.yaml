@@ -72,7 +72,8 @@ affinity:
     requiredDuringSchedulingIgnoredDuringExecution:
       nodeSelectorTerms:
         - matchExpressions:
-            - {key: "node-role.kubernetes.io/control-plane", operator: Exists}
+            - key: "node-role.kubernetes.io/control-plane"
+              operator: Exists
 
 configEnv:
   SYSTEM_UPGRADE_CONTROLLER_DEBUG: "false"
@@ -80,7 +81,7 @@ configEnv:
   SYSTEM_UPGRADE_JOB_ACTIVE_DEADLINE_SECONDS: "900"
   SYSTEM_UPGRADE_JOB_BACKOFF_LIMIT: "99"
   SYSTEM_UPGRADE_JOB_IMAGE_PULL_POLICY: "Always"
-  SYSTEM_UPGRADE_JOB_KUBECTL_IMAGE: "rancher/kubectl:v1.28.3"
+  SYSTEM_UPGRADE_JOB_KUBECTL_IMAGE: "rancher/kubectl:v1.29.4"
   SYSTEM_UPGRADE_JOB_PRIVILEGED: "true"
   SYSTEM_UPGRADE_JOB_TTL_SECONDS_AFTER_FINISH: "900"
   SYSTEM_UPGRADE_PLAN_POLLING_INTERVAL: "15m"
