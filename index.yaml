@@ -32,6 +32,23 @@ entries:
   system-upgrade-controller:
   - apiVersion: v2
     appVersion: v0.13.4
+    created: "2024-06-29T11:40:41.517841116Z"
+    description: Kubernetes-native upgrade controller (for nodes)
+    digest: 8639a499430178b6e9cd819b61a291d7ab750a49eb298fa7ce9c9a457d4bd5bd
+    home: https://github.com/rancher/system-upgrade-controller
+    maintainers:
+    - email: lukas.steiner@steinheilig.de
+      name: lu1as
+    name: system-upgrade-controller
+    sources:
+    - https://github.com/nimbolus/helm-charts/tree/main/charts/system-upgrade-controller
+    - https://github.com/rancher/system-upgrade-controller
+    type: application
+    urls:
+    - https://github.com/nimbolus/helm-charts/releases/download/system-upgrade-controller-0.4.1/system-upgrade-controller-0.4.1.tgz
+    version: 0.4.1
+  - apiVersion: v2
+    appVersion: v0.13.4
     created: "2024-06-16T12:21:35.676963771Z"
     description: Kubernetes-native upgrade controller (for nodes)
     digest: ccafda76be4aed41842ff2e14a0f430da72cd9962a0f20596673d6df5595d3a4
@@ -211,4 +228,4 @@ entries:
     urls:
     - https://github.com/nimbolus/helm-charts/releases/download/terraform-backend-0.1.0/terraform-backend-0.1.0.tgz
     version: 0.1.0
-generated: "2024-06-16T12:21:35.676999728Z"
+generated: "2024-06-29T11:40:41.51788055Z"
