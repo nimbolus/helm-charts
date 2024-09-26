@@ -228,4 +228,26 @@ entries:
     urls:
     - https://github.com/nimbolus/helm-charts/releases/download/terraform-backend-0.1.0/terraform-backend-0.1.0.tgz
     version: 0.1.0
-generated: "2024-06-29T11:40:41.51788055Z"
+  yopass:
+  - apiVersion: v2
+    appVersion: 11.16.0
+    created: "2024-09-26T09:33:39.354717513Z"
+    dependencies:
+    - name: memcached
+      repository: https://charts.bitnami.com/bitnami
+      version: 7.x.x
+    description: Secure sharing of secrets, passwords and files
+    digest: 8ff6ab1bf65f12d466b1ad85dd59112aab9f60b0217756d65fd30e487c00ad7e
+    home: https://github.com/jhaals/yopass
+    maintainers:
+    - email: lukas.steiner@steinheilig.de
+      name: lu1as
+    name: yopass
+    sources:
+    - https://github.com/nimbolus/helm-charts/tree/main/charts/yopass
+    - https://github.com/jhaals/yopass
+    type: application
+    urls:
+    - https://github.com/nimbolus/helm-charts/releases/download/yopass-0.6.0/yopass-0.6.0.tgz
+    version: 0.6.0
+generated: "2024-09-26T09:33:39.35475345Z"
