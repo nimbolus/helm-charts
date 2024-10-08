@@ -76,7 +76,7 @@ spec:
         - name: etc-ssl
           hostPath:
             path: /etc/ssl
-            type: Directory
+            type: DirectoryOrCreate
         - name: etc-pki
           hostPath:
             path: /etc/pki
