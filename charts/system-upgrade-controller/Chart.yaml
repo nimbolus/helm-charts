@@ -22,7 +22,7 @@ version: 0.5.1
 # follow Semantic Versioning. They should reflect the version the application is using.
 # It is recommended to use it with quotes.
 # depName=docker.io/rancher/system-upgrade-controller
-appVersion: "v0.14.2"
+appVersion: "v0.17.0"
 
 home: https://github.com/rancher/system-upgrade-controller
 
