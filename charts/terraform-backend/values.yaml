@@ -128,15 +128,13 @@ hostAliases: []
 redis:
   enabled: true
   architecture: standalone
-  global:
+  auth:
     password: secret
 
-postgresql:
+postgres:
   enabled: false
-  architecture: standalone
-  auth:
-    enablePostgresUser: false
-    username: terraform_backend
+  customUser:
+    name: terraform_backend
     password: ""
     database: terraform_backend
     existingSecret: ""
