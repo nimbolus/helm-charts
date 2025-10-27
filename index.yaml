@@ -249,6 +249,34 @@ entries:
     version: 0.1.0
   terraform-backend:
   - apiVersion: v2
+    appVersion: 0.1.3
+    created: "2025-10-27T21:42:50.330238756Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/cloudpirates
+      version: 0.9.x
+    - condition: postgres.enabled
+      name: postgres
+      repository: oci://registry-1.docker.io/cloudpirates
+      version: 0.10.x
+    description: A Terraform state backend server
+    digest: c67ff2da72518f49c6fd53a6b2ab8c940711759c830ac140fa656c92201780e4
+    home: https://github.com/nimbolus/terraform-backend
+    maintainers:
+    - email: lukas.steiner@steinheilig.de
+      name: lu1as
+    - email: tobias.krischer@elyxon.de
+      name: tobikris
+    name: terraform-backend
+    sources:
+    - https://github.com/nimbolus/helm-charts/tree/main/charts/terraform-backend
+    - https://github.com/nimbolus/terraform-backend
+    type: application
+    urls:
+    - https://github.com/nimbolus/helm-charts/releases/download/terraform-backend-0.2.1/terraform-backend-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v2
     appVersion: 0.1.2
     created: "2025-10-27T21:13:39.736892894Z"
     dependencies:
@@ -403,4 +431,4 @@ entries:
     urls:
     - https://github.com/nimbolus/helm-charts/releases/download/yopass-0.6.0/yopass-0.6.0.tgz
     version: 0.6.0
-generated: "2025-10-27T21:13:39.736958159Z"
+generated: "2025-10-27T21:42:50.330291214Z"
