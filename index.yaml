@@ -84,6 +84,23 @@ entries:
     version: 0.1.0
   system-upgrade-controller:
   - apiVersion: v2
+    appVersion: v0.17.0
+    created: "2025-10-27T21:13:39.555461807Z"
+    description: Kubernetes-native upgrade controller (for nodes)
+    digest: d31a0561906d622cf718e1b62b8956f8b27d2863e4a3bd6071a6423091d21efb
+    home: https://github.com/rancher/system-upgrade-controller
+    maintainers:
+    - email: lukas.steiner@steinheilig.de
+      name: lu1as
+    name: system-upgrade-controller
+    sources:
+    - https://github.com/nimbolus/helm-charts/tree/main/charts/system-upgrade-controller
+    - https://github.com/rancher/system-upgrade-controller
+    type: application
+    urls:
+    - https://github.com/nimbolus/helm-charts/releases/download/system-upgrade-controller-0.6.0/system-upgrade-controller-0.6.0.tgz
+    version: 0.6.0
+  - apiVersion: v2
     appVersion: v0.14.2
     created: "2024-11-29T21:41:28.820299805Z"
     description: Kubernetes-native upgrade controller (for nodes)
@@ -233,6 +250,34 @@ entries:
   terraform-backend:
   - apiVersion: v2
     appVersion: 0.1.2
+    created: "2025-10-27T21:13:39.736892894Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/cloudpirates
+      version: 0.9.x
+    - condition: postgres.enabled
+      name: postgres
+      repository: oci://registry-1.docker.io/cloudpirates
+      version: 0.10.x
+    description: A Terraform state backend server
+    digest: 82a2321ff4ad81dcfd43b07e04354e19d627620c03ca037e294ca22c6f2536b7
+    home: https://github.com/nimbolus/terraform-backend
+    maintainers:
+    - email: lukas.steiner@steinheilig.de
+      name: lu1as
+    - email: tobias.krischer@elyxon.de
+      name: tobikris
+    name: terraform-backend
+    sources:
+    - https://github.com/nimbolus/helm-charts/tree/main/charts/terraform-backend
+    - https://github.com/nimbolus/terraform-backend
+    type: application
+    urls:
+    - https://github.com/nimbolus/helm-charts/releases/download/terraform-backend-0.2.0/terraform-backend-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 0.1.2
     created: "2024-05-07T20:56:10.92293134Z"
     dependencies:
     - condition: redis.enabled
@@ -358,4 +403,4 @@ entries:
     urls:
     - https://github.com/nimbolus/helm-charts/releases/download/yopass-0.6.0/yopass-0.6.0.tgz
     version: 0.6.0
-generated: "2024-12-02T18:22:56.908790624Z"
+generated: "2025-10-27T21:13:39.736958159Z"
