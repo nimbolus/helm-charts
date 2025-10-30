@@ -21,7 +21,6 @@ spec:
         {{- end }}
       labels:
         app.kubernetes.io/component: controller
-        app.kubernetes.io/name: system-upgrade-controller
         upgrade.cattle.io/controller: system-upgrade-controller
         {{- include "system-upgrade-controller.selectorLabels" . | nindent 8 }}
     spec:
