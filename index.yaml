@@ -84,6 +84,23 @@ entries:
     version: 0.1.0
   system-upgrade-controller:
   - apiVersion: v2
+    appVersion: v0.18.0
+    created: "2025-12-14T11:18:21.735634281Z"
+    description: Kubernetes-native upgrade controller (for nodes)
+    digest: 021ace5572913b9af35b7ad0ae23a79b427faf588b82741505bb424e9779b0d4
+    home: https://github.com/rancher/system-upgrade-controller
+    maintainers:
+    - email: lukas.steiner@steinheilig.de
+      name: lu1as
+    name: system-upgrade-controller
+    sources:
+    - https://github.com/nimbolus/helm-charts/tree/main/charts/system-upgrade-controller
+    - https://github.com/rancher/system-upgrade-controller
+    type: application
+    urls:
+    - https://github.com/nimbolus/helm-charts/releases/download/system-upgrade-controller-0.7.0/system-upgrade-controller-0.7.0.tgz
+    version: 0.7.0
+  - apiVersion: v2
     appVersion: v0.17.0
     created: "2025-10-30T18:16:41.292583231Z"
     description: Kubernetes-native upgrade controller (for nodes)
@@ -448,4 +465,4 @@ entries:
     urls:
     - https://github.com/nimbolus/helm-charts/releases/download/yopass-0.6.0/yopass-0.6.0.tgz
     version: 0.6.0
-generated: "2025-10-30T18:16:41.292651488Z"
+generated: "2025-12-14T11:18:21.735717037Z"
