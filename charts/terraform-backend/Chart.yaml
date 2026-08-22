@@ -22,7 +22,7 @@ version: 0.3.2
 # follow Semantic Versioning. They should reflect the version the application is using.
 # It is recommended to use it with quotes.
 # depName=ghcr.io/nimbolus/terraform-backend
-appVersion: "0.2.2"
+appVersion: "0.2.3"
 
 home: https://github.com/nimbolus/terraform-backend
 
