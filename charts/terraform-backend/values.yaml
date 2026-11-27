@@ -82,8 +82,10 @@ tolerations: []
 affinity: {}
 
 deployment:
+  # Recreate stops all old pods before starting new ones. terraform-backend 0.3.0 requires that old and new versions
+  # never run at the same time. With s3 or postgres storage, RollingUpdate works again once the migration is done.
   updateStrategy:
-    type: RollingUpdate
+    type: Recreate
   probeScheme: HTTP
 
 env:

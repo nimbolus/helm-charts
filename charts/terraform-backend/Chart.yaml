@@ -26,6 +26,16 @@ appVersion: "0.3.0"
 
 home: https://github.com/nimbolus/terraform-backend
 
+annotations:
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "terraform-backend 0.3.0 migrates stored states and can't be downgraded without a backup: back up the storage before upgrading"
+      links:
+        - name: Migration guide
+          url: https://github.com/nimbolus/terraform-backend/blob/v0.3.0/docs/migration.md
+    - kind: changed
+      description: "The default update strategy is Recreate, because old and new versions must not run at the same time"
+
 dependencies:
   - name: redis
     version: 0.9.x
