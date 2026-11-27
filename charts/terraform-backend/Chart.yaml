@@ -15,16 +15,26 @@ type: application
 # This is the chart version. This version number should be incremented each time you make changes
 # to the chart and its templates, including the app version.
 # Versions are expected to follow Semantic Versioning (https://semver.org/)
-version: 0.3.3
+version: 0.4.0
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to
 # follow Semantic Versioning. They should reflect the version the application is using.
 # It is recommended to use it with quotes.
 # depName=ghcr.io/nimbolus/terraform-backend
-appVersion: "0.2.4"
+appVersion: "0.3.0"
 
 home: https://github.com/nimbolus/terraform-backend
+
+annotations:
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "terraform-backend 0.3.0 migrates stored states and can't be downgraded without a backup: back up the storage before upgrading"
+      links:
+        - name: Migration guide
+          url: https://github.com/nimbolus/terraform-backend/blob/v0.3.0/docs/migration.md
+    - kind: changed
+      description: "The default update strategy is Recreate, because old and new versions must not run at the same time"
 
 dependencies:
   - name: redis
