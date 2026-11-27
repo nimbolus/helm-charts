@@ -282,6 +282,43 @@ entries:
     - https://github.com/nimbolus/helm-charts/releases/download/system-upgrade-controller-0.1.0/system-upgrade-controller-0.1.0.tgz
     version: 0.1.0
   terraform-backend:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: "terraform-backend 0.3.0 migrates stored states and can't be downgraded without a backup: back up the storage before upgrading"
+          links:
+            - name: Migration guide
+              url: https://github.com/nimbolus/terraform-backend/blob/v0.3.0/docs/migration.md
+        - kind: changed
+          description: "The default update strategy is Recreate, because old and new versions must not run at the same time"
+    apiVersion: v2
+    appVersion: 0.3.0
+    created: "2026-11-27T00:48:46.828714807Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/cloudpirates
+      version: 0.9.x
+    - condition: postgres.enabled
+      name: postgres
+      repository: oci://registry-1.docker.io/cloudpirates
+      version: 0.10.x
+    description: A Terraform state backend server
+    digest: 4a39951b684087c648b248070759a38d28b6a5b8680ac5cc32923e66c4cbae8b
+    home: https://github.com/nimbolus/terraform-backend
+    maintainers:
+    - email: lukas.steiner@steinheilig.de
+      name: lu1as
+    - email: tobias.krischer@elyxon.de
+      name: tobikris
+    name: terraform-backend
+    sources:
+    - https://github.com/nimbolus/helm-charts/tree/main/charts/terraform-backend
+    - https://github.com/nimbolus/terraform-backend
+    type: application
+    urls:
+    - https://github.com/nimbolus/helm-charts/releases/download/terraform-backend-0.4.0/terraform-backend-0.4.0.tgz
+    version: 0.4.0
   - apiVersion: v2
     appVersion: 0.2.4
     created: "2026-10-29T20:03:10.948199096Z"
@@ -577,4 +614,4 @@ entries:
     urls:
     - https://github.com/nimbolus/helm-charts/releases/download/yopass-0.6.0/yopass-0.6.0.tgz
     version: 0.6.0
-generated: "2026-10-29T20:03:10.948227909Z"
+generated: "2026-11-27T00:48:46.828787924Z"
